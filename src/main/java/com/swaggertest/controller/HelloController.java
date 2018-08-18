@@ -12,6 +12,10 @@ public class HelloController {
 	public String sayHello() {
 		return "Swagger Hello World Application";
 	}
+	@RequestMapping(method = RequestMethod.GET, value = "hello123", produces=MediaType.APPLICATION_JSON_VALUE)
+	public String sayHello123() {
+		return "Swagger Hello World Application";
+	}
 	@RequestMapping(method = RequestMethod.POST, value = "/api/hellopost")
 	public String sayHello1() {
 		return "Swagger Hello World Application";
